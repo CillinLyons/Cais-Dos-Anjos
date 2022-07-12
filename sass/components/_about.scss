@@ -1,0 +1,152 @@
+.about {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond(phone) {
+      padding: 0 4rem;
+    }
+  }
+
+  &__row-start {
+    display: flex;
+    max-width: 114rem;
+
+    @include respond(tab-land) {
+      max-width: 90rem;
+      align-items: center;
+    }
+
+    @include respond(tab-port) {
+      max-width: 75rem;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__row-end {
+    display: flex;
+    justify-content: end;
+    max-width: 114rem;
+    margin: 7rem 0;
+
+    @include respond(tab-land) {
+      max-width: 90rem;
+      align-items: center;
+      text-align: end;
+    }
+    @include respond(tab-port) {
+      max-width: 75rem;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: end;
+    }
+  }
+
+  &__col-text {
+    align-self: center;
+  }
+
+  &__text-1,
+  &__text-3 {
+    padding-right: 5rem;
+  }
+
+  &__text-2 {
+    padding-left: 5rem;
+  }
+
+  &__col-photo {
+    &--centered {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+
+      @include respond(phone) {
+        align-self: start;
+        margin-top: 4rem;
+      }
+    }
+
+    @include respond(phone) {
+      display: flex;
+      align-self: start;
+      margin-top: 4rem;
+    }
+  }
+
+  /* &__col-map {
+    width: 300px;
+    height: 200px;
+    @include respond(tab-port) {
+      width: 240px;
+      height: 160px;
+    }
+    @include respond(phone) {
+      width: 195px;
+      height: 130px;
+      margin-top: 4rem;
+    }
+  }*/
+
+  &__photo-1 {
+    width: 300px;
+    height: 200px;
+
+    @include respond(tab-port) {
+      width: 240px;
+      height: 160px;
+    }
+    @include respond(phone) {
+      width: 195px;
+      height: 130px;
+    }
+  }
+
+  &__photo-2 {
+    width: 300px;
+    height: 200px;
+
+    @include respond(tab-port) {
+      width: 240px;
+      height: 160px;
+    }
+    @include respond(phone) {
+      width: 195px;
+      height: 130px;
+    }
+  }
+
+  &__text {
+    align-self: center;
+  }
+}
+
+.rightAnimation {
+  animation: moveInRight 2s;
+}
+
+.leftAnimation {
+  animation: moveInLeft 2s;
+}
+
+#map {
+  width: 300px !important;
+  height: 200px !important;
+  @include respond(tab-port) {
+    width: 240px !important;
+    height: 160px !important;
+  }
+  @include respond(phone) {
+    width: 195px !important;
+    height: 130px !important;
+    margin-top: 4rem;
+  }
+}

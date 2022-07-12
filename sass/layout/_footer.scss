@@ -1,0 +1,68 @@
+.footer {
+  background-color: $color-grey-dark-3;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: $color-grey-light-1;
+
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__logo {
+    width: 15rem;
+    height: auto;
+  }
+
+  &__logo-img {
+    width: 20.5rem;
+    height: 19.5rem;
+    border-radius: 50%;
+
+    @include respond(tab-port) {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    @include respond(phone) {
+      width: 12rem;
+      height: 12rem;
+    }
+
+    @include respond(xtra-small) {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  &__copyright {
+    padding-top: 2rem;
+  }
+}
+
+.row--footer {
+  max-width: 114rem;
+  display: flex;
+  justify-content: end;
+
+  @include respond(tab-land) {
+    max-width: 90rem;
+  }
+
+  @include respond(tab-port) {
+    max-width: 70rem;
+  }
+
+  @include respond(phone) {
+    max-width: 50rem;
+    margin-right: 2rem;
+  }
+}

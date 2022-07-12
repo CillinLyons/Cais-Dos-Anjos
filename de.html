@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script
+      src="https://kit.fontawesome.com/deaeddb23e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--<link rel="stylesheet" href="css/icon-font.css" />-->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <script src="index.js"></script>
+
+    <title>Cais Dos Anjos | Vermietung von Immobilien</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-logo">
+            <img
+                src="img/logo.jpg"
+                alt=""
+                class="header__logo-img"
+              />
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#section-about">ÜBER</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#section-gallery">GALERIE</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#section-contact">RESERVIEREN</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-icon" href="https://www.facebook.com/caisdosanjoshouses/" target="_blank">
+              <i
+                class="fa-brands fa-facebook-square header__nav-icon--social"
+              ></i>
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-icon" href="https://www.instagram.com/caisdosanjoshouses/?hl=en" target="_blank">
+              <i
+                class="fa-brands fa-instagram-square header__nav-icon--social"
+              ></i>
+            </a>
+          </li>
+          <li class="header__nav-item has-submenu">
+            <a class="header__nav-icon" href="#" tabindex="0">
+              <img
+                    src="img/germany-flag.png"
+                    alt=""
+                    class="header__nav-icon--flag"
+                  />
+            </a>
+            <ul class="header__nav-submenu">
+              <li class="header__nav-subitem">
+                <a class="header__nav-link" href="https://www.caisdosanjoshouses.com/pt.html">
+                  <img
+                    src="img/portugal-flag.png"
+                    alt=""
+                    class="header__nav-icon--flag"
+                  />
+                </a>
+              </li>
+              <li class="header__nav-subitem">
+                <a class="header__nav-link" href="https://www.caisdosanjoshouses.com">
+                    <img
+                    src="img/british-flag.png"
+                    alt=""
+                    class="header__nav-icon--flag british-flag"
+                  />
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-toggle">
+            <a href="#"
+              ><input
+                type="checkbox"
+                class="header__nav-checkbox"
+                id="navi-toggle"
+              />
+              <label for="navi-toggle" class="header__nav-label">
+                <span class="header__nav-button">&nbsp;</span>
+              </label>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">
+          CAIS DOS ANJOS
+          <br>
+          HOUSES
+          <br>
+          Madeira
+        </span>
+
+          <span class="heading-primary--sub">"Come in as guests, leave as family."</span>
+        </h1>
+      </div>
+    </header>
+    <main>
+      <section class="section-about" id="section-about">
+        <div class="about__container">
+          <div class="about__row-start">
+            <div class="about__col-text">
+              <p class="about__text-1 paragraph">
+                Cais dos Anjos wurde von Tony erdacht und gebaut und es ist unser
+                Familie Strandhaus seit 1991. Er war derjenige, der diesen einzigartigen
+                einzigartigen und besonderen Ort idealisiert hat. In seinem Andenken und in einer Art
+                Arbeit und Traum zu folgen, haben wir die beiden Häuser, die Teil von Cais dos Anjos sind
+                Teil von Cais dos Anjos sind. (Sea House und Terra House) Zwei Dinge
+                die er liebte: das Meer und die Arbeit in der Gartenerde "Terra".
+                Im Jahr 2017 beschloss seine Tochter Joana, nach Madeira zurückzukehren, nachdem sie
+                Madeira zurückzukehren, nachdem sie im Ausland studiert und gearbeitet hatte, und beschloss gemeinsam mit der Familie
+                die Häuser umzugestalten und ihnen wieder Leben einzuhauchen. Einer von Tonys
+                Träume lebt noch immer mit uns.
+              </p>
+            </div>
+            <div class="about__col-photo">
+              <div class="about__photo-1">
+                <img src="img/gallery-11.jpg" class="gallery__img" />
+              </div>
+            </div>
+          </div>
+          <div class="about__row-end">
+            <div class="about__col-map">
+              <div id="map" class="about__map"></div>
+            </div>
+            <div class="about__col-text">
+              <p class="about__text-2 paragraph">
+                Die Häuser von Cais dos Anjos befinden sich in Ponta do Sol, einer der
+                einer der berühmtesten Gegenden der Insel, die für ihr mildes Wetter
+                Wetterbedingungen das ganze Jahr über. Ponta de Sol macht seinem Namen alle Ehre
+                Namen gerecht und, glauben Sie mir, es gibt jeden Tag einen fantastischen neuen
+                jeden Tag. Wenn Sie auf der Suche nach einem Ort sind, an dem Sie einen
+                einen Privatstrand haben können, bieten die Cais dos Anjos Houses diesen Vorzug. Aber
+                bevor Sie das Meer erreichen, genießen Sie den Abstieg zum Haus. Der Zugang zu den Cais dos Anjos Houses erfolgt über Stufen, die zu
+                zu verschiedenen Aussichtspunkten, die das Wesen dieser schönen Insel
+                verkörpern. Sobald Sie die Steintreppe hinabsteigen, wird Ihr Blick
+                verliert sich der Blick in der Weite des Meeres und den grünen Obstbäumen, die
+                der grünen Obstbäume, die Sie auf diesem Abenteuer begleiten.
+              </p>
+            </div>
+          </div>
+          <div class="about__row-start">
+            <div class="about__col-text">
+              <p class="about__text-3 paragraph">
+                Wenn man die schöne blaue Tür erreicht hat, gelangt man zum
+                den Nebeneingang der Häuser und dort werden die
+                Bougainvillea und andere Blumen sind Teil der restlichen
+                Kulisse. Willkommen in den Häusern und an Ihrem privaten Steg. Cais
+                dos Anjos ist in zwei Häuser unterteilt, das Terra-Haus und das
+                Sea House, die jeweils mit einem eigenen Thema dekoriert sind. Die Häuser verfügen über 1
+                Schlafzimmer mit 1 Doppelbett, 1 WC, 1 voll ausgestattete Küchenzeile, 1
+                Esszimmer und Wohnzimmer, sowie ein Zwischengeschoss, in dem 2 weitere
+                Einzelbetten zur Verfügung stehen. Jedes Haus hat einen eigenen Grill und
+                und der Zugang zum Steg erfolgt durch das Tor, das den Zugang zum
+                Kieselstein. Unser Motto ist der Respekt vor der Natur: kümmere dich um sie
+                wie Sie möchten, dass sie sich um Sie kümmert.
+              </p>
+            </div>
+            <div class="about__col-photo--centered">
+              <div class="about__photo-2">
+                <div class="about__photo-1">
+                  <img src="img/gallery-28.jpg" class="gallery__img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-features" id="section-features">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <svg class="feature-box__icon">
+                <defs>
+                  <linearGradient id="icon-gradient" x2="0.35" y2="1">
+                    <stop offset="5%" stop-color="#bedef8" />
+                    <stop offset="95%" stop-color="#6fb2d2" />
+                  </linearGradient>
+                </defs>
+                <use xlink:href="img/sprite.svg#icon-sun"></use>
+              </svg>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Blick auf den Sonnenuntergang
+              </h3>
+              <p class="feature-box__text">
+                Kein Sonnenuntergang gleicht dem anderen und jeder Tag ist einzigartig und besonders.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <svg class="feature-box__icon">
+                <use xlink:href="img/sprite.svg#icon-home2"></use>
+              </svg>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Privater Ort
+              </h3>
+              <p class="feature-box__text">
+                Sehr privat und exklusiv perfekten Ort, wenn Sie zu entkommen oder einen Rückzug wollen. Direkter Zugang zum Strand, wo Menschen nur selten passieren.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <svg class="feature-box__icon">
+                <use xlink:href="img/sprite.svg#icon-lifebuoy"></use>
+              </svg>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Thema Dekoration
+              </h3>
+              <p class="feature-box__text">
+                Zwei Dinge, die der "Vater" und Schöpfer der Häuser liebte: Sehr stilvoll und farbenfroh.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <svg class="feature-box__icon">
+                <use xlink:href="img/sprite.svg#icon-paw"></use>
+              </svg>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Haustierfreundlich
+              </h3>
+              <p class="feature-box__text">
+                Wir lieben unsere Haustiere und wissen, wie wichtig es ist, dass Sie Ihr Haustier immer und überallhin mitnehmen können.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-gallery" id="section-gallery">
+        <!-- Slideshow container -->
+        <div class="gallery__container">
+          <!-- Full-width images with number and caption text -->
+          <div class="gallery__slide fade">
+            <img src="img/gallery-1.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-2.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-3.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-4.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-5.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-6.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-7.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-8.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-9.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-10.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-11.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-12.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-13.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-14.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-15.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-16.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-17.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-18.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-19.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-20.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-21.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-22.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-23.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-24.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-25.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-26.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-27.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-28.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-29.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-30.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-31.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-32.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-33.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-34.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-35.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-36.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <div class="gallery__slide fade">
+            <img src="img/gallery-37.jpg" class="gallery__img" />
+            <div class="gallery__caption"></div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="gallery__prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="gallery__next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </section>
+
+      <section class="section-prices" id="section-prices">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Tolle Preise</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front card__side--front--1">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1"
+                    >Täglich</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>€90 pro Nacht</li>
+                    <li>Preis für 2 Personen</li>
+                    <li>Min 2 Nächte Aufenthalt</li>
+                    <li>Kinder unter 4 Jahren zahlen nicht</li>
+                    <li>Frühstück nicht inbegriffen</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back--1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">NUR</p>
+                    <p class="card__price-value">€90</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">BEDINGUNGEN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front card__side--front--2">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2"
+                    >Wöchentlich</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>15% rabatt</li>
+                    <li>Preis für 2 Personen</li>
+                    <li>Min 2 Nächte Aufenthalt</li>
+                    <li>Kinder unter 4 Jahren zahlen nicht</li>
+                    <li>Frühstück nicht inbegriffen</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back--2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Nur</p>
+                    <p class="card__price-value">€535</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">BEDINGUNGEN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front card__side--front--3">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3"
+                    >Monatlich</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>25% rabatt</li>
+                    <li>Preis für 2 Personen</li>
+                    <li>Min 2 Nächte Aufenthalt</li>
+                    <li>Kinder unter 4 Jahren zahlen nicht</li>
+                    <li>Frühstück nicht inbegriffen</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back--3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Nur</p>
+                    <p class="card__price-value">€1890</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">BEDINGUNGEN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-reviews" id="section-reviews">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
+            Ihr Browser wird nicht unterstützt!
+          </video>
+        </div>
+
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Wir machen Menschen glücklich</h2>
+        </div>
+
+        <div class="row">
+          <div class="review">
+            <figure class="review__shape">
+              <img
+                src="img/person-2.jpg"
+                alt="Person on a tour"
+                class="review__img"
+              />
+              <figcaption class="review__caption">Daniel Gorin</figcaption>
+            </figure>
+            <div class="review__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Joana ist eine der seltenen Rassen von erstklassigen Gastgebern.
+              </h3>
+              <p>
+                Joana sorgte persönlich für einen reibungslosen Check-in und war immer über WhatsApp erreichbar. Das abgelegene
+                Haus am Meer ist wie ein Traum. Allein mit dem Klang der Wellen und des Windes. Die lange Treppe
+                Die lange Treppe, die zum Haus durch einen wunderschönen Garten mit tropischen Bäumen und lila Blumen führt, verstärkt das Gefühl der Abgeschiedenheit
+                von der Welt. Wahrhaft magisch. Die Inneneinrichtung
+                Inneneinrichtung ist ebenfalls geschmackvoll und einzigartig.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="review">
+            <figure class="review__shape">
+              <img
+                src="img/person-1.jpg"
+                alt="Person on a tour"
+                class="review__img"
+              />
+              <figcaption class="review__caption">Rasa Jurgaitiene</figcaption>
+            </figure>
+            <div class="review__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Ein wahrhaft magischer Ort - große Terrasse, komfortable
+                Schlafzimmer, voll ausgestattete Küche.
+              </h3>
+              <p>
+                Viel Grün rundherum, Privatstrand. Joana war sehr
+                Joana war sehr hilfsbereit, einfach zu erreichen und zu kommunizieren. Wenn Sie auf Privatsphäre
+                und die Natur liebt und keine Angst vor den 286 Stufen hat, ist dieser Ort ein Muss.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact" id="section-contact">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form
+                method="POST"
+                id="form"
+                name="form"
+                class="form"
+                novalidate="novalidate"
+                action="email.php"
+                onsubmit="this.submit(); this.reset(); return false;"
+              >
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Jetzt buchen</h2>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Name"
+                    name="name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Name</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Email</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Thema"
+                    name="subject"
+                    id="subject"
+                    required
+                  />
+                  <label for="subject" class="form__label">Thema</label>
+                </div>
+                <div class="form__group">
+                  <textarea
+                    type="text"
+                    class="form__input--text-area"
+                    placeholder="Nachricht"
+                    name="message"
+                    id="message"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form__group">
+                  <div class="form__btn">
+                    <button
+                      class="btn btn--green u-margin-top-small"
+                      type="submit"
+                      value="Send"
+                    >
+                    Senden
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="contact__container">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary--white">Kontakt</h2>
+              </div>
+              <div class="contact__list">
+                <div class="contact__list-item">
+                  <svg class="contact__icon u-margin-right-small">
+                    <use xlink:href="img/sprite.svg#icon-old-phone"></use>
+                  </svg>
+                  <p class="contact__text paragraph">+351 963 184 484</p>
+                </div>
+                <div class="contact__list-item">
+                  <svg class="contact__icon u-margin-right-small">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <p class="contact__text paragraph">
+                    caisdosanjosmadeira@gmail.com
+                  </p>
+                </div>
+                <div class="contact__list-item">
+                  <svg class="contact__icon--location u-margin-right-small">
+                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                  </svg>
+                  <p class="contact__text paragraph">
+                    Antiga Estrada Regional 101, No. 16 - Anjos, 9360-354
+                    Canhas, Ponta do Sol, Madeira, Portugal
+                  </p>
+                </div>
+              </div>
+              <div class="contact__iframe">
+                <iframe src="https://calendar.google.com/calendar/embed?height=250&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLisbon&showNav=1&showPrint=0&showTz=0&showTabs=0&src=Y2Fpc2Rvc2Fuam9zbWFkZWlyYUBnbWFpbC5jb20&src=Z2o2dGhqNGI3ZzJscTNoZDdibnBtajBiZXRkaTh2a2JAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%23E67C73" style="border: 0" height="250" frameborder="0" scrolling="no" class="contact__calendar u-margin-top-small"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <picture class="footer__logo">
+          <source
+            srcset="
+              img/logo.jpg 1x,
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo.jpg 1x,"
+            alt="Full logo"
+            src="img/logo.jpg"
+            class="footer__logo-img"
+          />
+        </picture>
+      </div>
+      <div class="row--footer">
+          <p class="footer__copyright">
+            Cais Dos Anjos Copyright &copy; 2022
+          </p>
+        </div>
+    </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__right">
+          <div class="accordion">
+            <div class="accordion__col">
+              <h2 class="heading-secondary u-margin-bottom-small">
+                Bedingungen & Konditionen
+              </h2>
+              <a href="#section-prices" class="popup__close">&times;</a>
+              <div class="accordion__tabs">
+                <div class="accordion__tab">
+                  <input class="accordion__input" type="radio" id="rd3" name="rd">
+                  <label for="rd3" class="accordion__tab-close">&times;</label>
+                </div>
+                <div class="accordion__tab">
+                  <input class="accordion__input" type="radio" id="rd1" name="rd">
+                  <label class="accordion__tab-label" for="rd1">
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                      WICHTIGE DINGE ZU WISSEN
+                    </h3>
+                  </label>
+                  <div class="accordion__tab-content">
+                    <ul class="popup__list">
+                        <li class="popup__list-item">
+                          Der Zugang zu den Häusern erfolgt über eine beträchtliche Anzahl von Treppen.
+                        </li>
+                        <li class="popup__list-item">
+                          Das Haus CAIS DOS ANJOS wird vollständig und exklusiv vermietet.
+                        </li>
+                        <li class="popup__list-item">
+                          Das Rauchen im Innenraum ist verboten.
+                        </li>
+                        <li class="popup__list-item">
+                          Beim Check-in werden die Häuser sauber und bezugsfertig übergeben, wir erwarten, dass Sie sie im gleichen Zustand zurückgeben. Natürlich erwarten wir nicht, dass Sie das Haus sauber machen oder den Boden waschen, aber wir erwarten, dass Sie die Häuser so ordentlich wie möglich hinterlassen.
+                        </li>
+                        <li class="popup__list-item">
+                           Der Müll muss in den Containern an der Hauptstraße entsorgt werden.
+                        </li>
+                        <li class="popup__list-item">
+                          Das Haus O CAIS DOS ANJOS befindet sich an einem unbewachten Strand. Seien Sie bitte vorsichtig und schwimmen Sie auf eigene Gefahr.
+                        </li>
+                        <li class="popup__list-item">
+                          Nachts schließen wir normalerweise die Tür, die zum Strand führt.
+                        </li>
+                        <li class="popup__list-item">Wenn es windig ist, schließen wir normalerweise den Sonnenschirm, damit er nicht fliegt oder beschädigt wird.</li>
+                        <li class="popup__list-item">Tagsüber empfehlen wir Ihnen, die Türen abzuschließen, wenn Sie die Häuser verlassen. Es gibt Schlüssel für die Strandtür und für den Haupteingang.</li>
+                        <li class="popup__list-item">Sie haben eine Außendusche, bitte verwenden Sie kein Shampoo oder Duschgel in dieser Dusche, das Wasser fließt unbehandelt direkt in den Strand/das Meer.</li>
+                        <li class="popup__list-item">Wir haben ein Stand Up Paddle Board, das Sie benutzen können, wir bitten nur darum, dass Sie nach der Benutzung frisches Wasser reichen, um das Salzwasser des Meeres zu entfernen.</li>
+                        <li class="popup__list-item">Die Dekorationsgegenstände in den CAIS DOS ANJOS Häusern müssen an ihrem Platz belassen werden.</li>
+                        <li class="popup__list-item">Auf Anfrage können wir einen Reinigungsservice während des Aufenthalts anbieten. Preis zu vereinbaren.</li>
+                        <li class="popup__list-item">Es ist nicht erlaubt, diesen Ort anders als für touristische Vermietung zu nutzen. Ausnahmsweise können Veranstaltungen genehmigt werden.</li>
+                        <li class="popup__list-item">Es gibt ein Beschwerdebuch, aber auch ein informelles Buch, in das Sie ein paar Zeilen über Ihren Aufenthalt schreiben können.</li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="accordion__tab">
+                  <input class="accordion__input" type="radio" id="rd2" name="rd">
+                  <label class="accordion__tab-label" for="rd2">
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                      BEDINGUNGEN
+                    </h3>
+                  </label>
+                  <div class="accordion__tab-content">
+                      <p class="popup__text--sub">
+                        Die CAIS DOS ANJOS Häuser "Angels Peer", haben 2 Häuser mit einer Kapazität von jeweils 4 Personen in Komfort, 8 Personen insgesamt.
+                Wir beraten Sie, wie der Raum aufgeteilt ist:
+                Der Ort verfügt über 2 Häuser (Casa Mar e Casa Terra) - (Meer Haus und Land Haus)
+                      </p>
+          <ul class="popup__list">
+            <li class="popup__list-item">Jedes Haus hat ein Wohnzimmer, eine Kochnische, ein Schlafzimmer, ein Zwischengeschoss und ein Badezimmer.
+            </li>
+            <li class="popup__list-item">Das Zwischengeschoss hat eine Deckenhöhe von 1,4 m.</li>
+            <li class="popup__list-item">Das Hauptschlafzimmer in Casa Mar ist 10m2 und das Hauptschlafzimmer in Casa Terra ist 12m2 groß.</li>
+            <li class="popup__list-item">Um die Schlafzimmer im Zwischengeschoss zu erreichen, müssen Sie eine Leiter benutzen, die von Kindern unter 6 Jahren nicht ohne Aufsicht eines Erwachsenen benutzt werden sollte.</li>
+            <li class="popup__list-item">Im Wohnzimmer gibt es eine voll ausgestattete Küchenzeile.</li>
+            <li class="popup__list-item">Die Terrasse kann als Sitzgelegenheit, Sonnendeck und Essplatz genutzt werden.</li>
+            <li class="popup__list-item">Es gibt 2 Grillplätze. Ein Grill befindet sich auf der Terrasse des Casa do Mar und der andere auf dem Dach des Casa Terra House mit einem Holzofen.</li>
+            <li class="popup__list-item">Cais dos Anjos - Houses ist möbliert und hat alles, was ein Haus braucht, um richtig zu funktionieren, wie Staubsauger, Besen, Küchentücher, Handtücher, Bettwäsche, Kissen, etc.</li>
+          </ul>
+          <p class="popup__text--sub">
+           Die Küche ist mit einem Backofen, Herdplatte, kombiniertem Kühlschrank, Toaster, Wasserkocher, Mikrowelle, Stabmixer, Fruchtpresse, Nespresso-Kaffeemaschine, French Press Kaffee ausgestattet. In jedem Haus finden Sie alles, was Sie zum Kochen brauchen, ein Set von 4 Tellern, Gläsern, Besteck, usw. Wir stellen auch Salz, Olivenöl, Essig, Knoblauch und Pfeffer zur Verfügung.
+    Es gibt Internet Wi-Fi (CAISDOSANJOS), Kabel-TV und 2 Lautsprecher JBL und IPX7.
+    Das Waschmittel für das Händewaschen ist ebenfalls enthalten.
+    Es gibt einen Haartrockner in jedem Bad.
+    Shampoos, Duschgels, Seifen und Toilettenpapier sind vorhanden.
+    Strandhandtücher sind im Lieferumfang enthalten.
+          </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNb4-2LEqFkghG_cnBc-5oS0udufzxxfc&callback=initMap&v=weekly"
+      async
+    ></script>
+  </body>
+</html>

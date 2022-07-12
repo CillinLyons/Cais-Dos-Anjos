@@ -1,0 +1,340 @@
+.header {
+  height: 85vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/gallery-3-lg.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 95vh;
+
+    @include headerHeight(mediumSize) {
+      clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+      height: 120vh;
+    }
+
+    @include headerHeight(smallSize) {
+      clip-path: polygon(0 0, 100% 0, 100% 130vh, 0 100%);
+      height: 160vh;
+    }
+
+    @include headerHeight(extra-small) {
+      clip-path: polygon(0 0, 100% 0, 100% 140vh, 0 100%);
+      height: 180vh;
+    }
+
+    @include headerHeight(extra-extra-small) {
+      clip-path: polygon(0 0, 100% 0, 100% 180vh, 0 100%);
+      height: 220vh;
+    }
+  }
+
+  &__container {
+  }
+
+  &__nav {
+    padding: 3rem 3rem;
+  }
+
+  &__nav-list {
+    @include respond(phone) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    display: flex;
+    flex-wrap: nowrap;
+    background: none;
+  }
+
+  &__nav-list li a {
+    display: block;
+    //padding: 15px 5px;
+  }
+
+  &__nav-toggle {
+    @include respond(phone) {
+      order: 1;
+      display: inline-block;
+    }
+    display: none;
+  }
+
+  &__nav-logo {
+    @include respond(phone) {
+      font-size: 20px;
+      padding: 7.5px 10px 7.5px 0;
+      display: flex;
+    }
+
+    padding-left: 2rem;
+
+    order: 0;
+    flex: 1;
+  }
+
+  &__logo-img {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+
+    @include respond(phone) {
+      width: 7.5rem;
+      height: 7.5rem;
+    }
+  }
+
+  &__nav-list,
+  &__nav-submenu {
+    list-style-type: none;
+  }
+
+  &__nav-item {
+    @include respond(phone) {
+      order: 3;
+      width: 100%;
+      text-align: center;
+      display: none;
+    }
+
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+
+  &__nav-link {
+    align-items: stretch;
+
+    &:link,
+    &:visited {
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      font-weight: 300;
+      position: relative;
+    }
+  }
+
+  &__nav-icon {
+    &:link,
+    &:visited {
+      color: $color-white;
+      text-decoration: none;
+      font-size: 2rem;
+      padding: 1rem 2rem;
+    }
+  }
+
+  &__nav-icon--social {
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+  }
+
+  &__nav-icon--flag {
+    width: 2.4rem;
+    height: 1.6rem;
+    object-fit: cover;
+    margin-top: 0.9rem;
+
+    @include respond(phone) {
+      margin-top: 0;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+  }
+
+  ul li:nth-child(1) .header__nav-icon:before {
+    background: #3b5999;
+  }
+
+  ul li:nth-child(2) .header__nav-icon:before {
+    background: #55acee;
+  }
+
+  .active &__nav-item {
+    display: block;
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  &__nav-submenu {
+    display: none;
+  }
+
+  &__nav-submenu-active &__nav-submenu {
+    @include respond(phone) {
+      position: unset;
+    }
+
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45px;
+    background: $color-white;
+  }
+
+  .has-submenu i {
+    font-size: 12px;
+  }
+
+  &__nav-subitem a {
+    padding: 10px 15px;
+  }
+
+  &__nav-submenu-active {
+    @include respond(phone) {
+      border-radius: 3px;
+      &__nav-checkbox {
+        display: none;
+      }
+
+      &__nav-label {
+        display: none;
+
+        @include respond(phone) {
+          background-color: #fff;
+          height: 5rem;
+          width: 5rem;
+          display: inline-block;
+          border-radius: 50%;
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+
+      &__nav-button {
+        position: relative;
+        margin-top: 2.4rem;
+      }
+
+      &__nav-button,
+      &__nav-button::before,
+      &__nav-button::after {
+        width: 2rem;
+        height: 2px;
+        background-color: #333;
+        display: inline-block;
+      }
+
+      &__nav-button::before,
+      &__nav-button::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all 0.2s;
+      }
+
+      &__nav-button::before {
+        top: -0.6rem;
+      }
+
+      &__nav-button::after {
+        top: 0.6rem;
+      }
+
+      &__nav-label:hover &__nav-button::before {
+        top: -0.8rem;
+      }
+
+      &__nav-label:hover &__nav-button::after {
+        top: 0.8rem;
+      }
+
+      &__nav-checkbox:checked + &__nav-label &__nav-button {
+        background-color: transparent;
+      }
+
+      &__nav-checkbox:checked + &__nav-label &__nav-button::before {
+        top: 0;
+        transform: rotate(135deg);
+      }
+
+      &__nav-checkbox:checked + &__nav-label &__nav-button::after {
+        top: 0;
+        transform: rotate(-135deg);
+      }
+      width: 20%;
+      margin: auto;
+    }
+
+    background-color: $color-white;
+    border-radius: 0;
+  }
+
+  // Hover Functionality
+  &__nav-item &__nav-link:before,
+  &__nav-link:after {
+    transition: all 0.5s;
+  }
+
+  &__nav-item &__nav-link:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: $color-white;
+    height: 1px;
+  }
+
+  &__nav-item &__nav-link:hover:after {
+    @include respond(phone) {
+      width: 20%;
+    }
+    width: 100%;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80vw;
+
+    @include respond(phone) {
+      top: 45%;
+    }
+
+    @include headerHeight(smallSize) {
+      top: 40%;
+    }
+
+    @include headerHeight(extra-small) {
+      top: 50%;
+    }
+  }
+}

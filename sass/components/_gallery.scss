@@ -1,0 +1,98 @@
+// Slideshow container
+.gallery {
+  &__container {
+    margin-top: 5rem;
+    max-width: 100rem;
+    position: relative;
+    margin: auto;
+
+    @include respond(tab-land) {
+      max-width: 70rem;
+    }
+
+    @include respond(phone) {
+      max-width: 50rem;
+    }
+
+    @include respond(small-phone) {
+      max-width: 35rem;
+    }
+  }
+
+  &__slide {
+    display: none;
+    //box-shadow: 10px 10px 20px #888888;
+    box-shadow: 0 1.5rem 2rem rgba($color-black, 0.2);
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 3px;
+    display: block;
+  }
+
+  &__caption {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  // Next & previous buttons
+  &__prev,
+  &__next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    opacity: 0.5;
+  }
+
+  // Position "next button" to the right
+  &__next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  // On hover, add opacity
+  &__prev:hover,
+  &__next:hover {
+    opacity: 1;
+  }
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,130 @@
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-black, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: scroll;
+  transition: all 0.3s;
+
+  @include respond(phone) {
+  }
+
+  @supports (-webkit-backdrop-filter: blur(1rem)) or
+    (backdrop-filter: blur(1rem)) {
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+    background-color: rbga($color-black, 0.3);
+  }
+
+  &__content {
+    @include central-pos;
+
+    width: 75%;
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    border-radius: 3px;
+    display: table;
+    //To display border-radius
+    //overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.4s 0.2s;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  //Open states
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:target &__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+
+    @include respond(phone) {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-grey-dark;
+      position: absolute;
+      line-height: 1;
+      top: 2.5rem;
+      right: 2.5rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      color: $color-primary-light;
+    }
+  }
+
+  &__right {
+    padding: 3rem 5rem;
+
+    @include respond(phone) {
+      padding: 1.5rem 2.5rem;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: end;
+    margin-top: 2rem;
+    @include respond(phone) {
+      margin-top: 1rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid $color-grey-light-2;
+
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid $color-grey-light-2;
+
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
+    &--sub {
+      font-size: 1.2rem;
+
+      @include respond(phone) {
+        font-size: 0.6rem;
+      }
+    }
+
+    @include respond(phone) {
+      font-size: 0.8rem;
+    }
+  }
+
+  &__list-item {
+    font-size: 1.2rem;
+
+    @include respond(phone) {
+      font-size: 0.8rem;
+    }
+  }
+}
